@@ -66,7 +66,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fdfdfd" },
+    { media: "(prefers-color-scheme: light)", color: "#f7f7f7" },
     { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
   ],
 };
@@ -78,7 +78,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-AU" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col mt-20">
         <a href="#main-content" className="skip-to-main">
           Skip to main content
         </a>

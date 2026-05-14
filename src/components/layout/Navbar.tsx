@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/#features", label: "Features" },
@@ -28,10 +29,9 @@ export default function Navbar() {
   }, []);
 
   const navBg =
-    "border-b border-border/60 bg-background/95 shadow-sm backdrop-blur-md";
+    " bg-white shadow-sm backdrop-blur-md";
 
   const textColor = isHome && !scrolled ? "text-gray-700" : "text-gray-700";
-  const logoColor = isHome && !scrolled ? "text-purple-700" : "text-purple-700";
 
   return (
     <header 
@@ -48,7 +48,7 @@ export default function Navbar() {
             className="flex items-center gap-2 shrink-0"
             aria-label="Zealth OS home"
           >
-            <div className="w-8 h-8 rounded-lg gradient-button flex items-center justify-center">
+            {/* <div className="w-8 h-8 rounded-lg gradient-button flex items-center justify-center">
               <span className="text-white font-bold text-sm">Z</span>
             </div>
             <span className={cn("font-bold text-xl tracking-tight", logoColor)}>
@@ -60,7 +60,9 @@ export default function Navbar() {
               >
                 OS
               </span>
-            </span>
+            </span> */}
+
+            <Image src="/assets/logo.png" alt="Zealth OS" width={138} height={32} />
           </Link>
 
           {/* Desktop Nav */}
@@ -88,7 +90,7 @@ export default function Navbar() {
                 buttonVariants({ variant: "ghost", size: "default" }),
                 "font-medium text-sm",
                 isHome && !scrolled
-                  ? "text-gray-700 hover:text-gray-900 hover:bg-black/5"
+                  ? "text-gray-700 hover:text-gray-900 bg-foreground "
                   : "text-gray-700 hover:bg-black/5"
               )}
             >
@@ -97,8 +99,8 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={cn(
-                buttonVariants({ size: "default" }),
-                "gradient-button text-white font-medium text-sm px-5 rounded-full hover:opacity-90 transition-opacity shadow-lg border-0"
+                // buttonVariants({ size: "default" }),
+                "bg-accent text-white  font-medium text-sm px-5 py-2 rounded-md   shadow-sm border-0"
               )}
             >
               Start Free Trial
