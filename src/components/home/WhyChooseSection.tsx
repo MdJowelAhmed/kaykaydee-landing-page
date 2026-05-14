@@ -31,7 +31,7 @@ export default function WhyChooseSection() {
   return (
     <section className="py-16 md:py-24" id="features">
       <div className="max-w-7xl mx-auto ">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Why Choose Zealth OS?
           </h2>
@@ -43,7 +43,7 @@ export default function WhyChooseSection() {
               href="/about"
               className={cn(
                 buttonVariants({ size: "default" }),
-                "gradient-button text-white rounded-full px-6 font-medium hover:opacity-90 transition-opacity border-0 inline-flex items-center"
+                "bg-accent text-white rounded-md px-6 py-3 h-12 font-medium hover:opacity-90 transition-opacity border-0 inline-flex items-center"
               )}
             >
               About Us
@@ -52,13 +52,13 @@ export default function WhyChooseSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-40">
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
             return (
               <div
                 key={index}
-                className="flex flex-col items-center rounded-2xl border border-border/60 bg-card p-6 text-center shadow-sm transition-shadow hover:shadow-md"
+                className="flex flex-col items-center  text-center"
               >
                 <div
                   className={`w-14 h-14 rounded-full ${reason.color} flex items-center justify-center mb-4`}

@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+/** Body / UI: Poppins. Headings: Basis Grotesque Arabic Pro (self-hosted in `public/fonts/`, see `globals.css`). */
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin", "latin-ext"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -77,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-AU" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en-AU" className={`${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col mt-20">
         <a href="#main-content" className="skip-to-main">
           Skip to main content

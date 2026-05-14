@@ -25,11 +25,11 @@ export default function StatsSection() {
                 {stat.icon && (
                   <span aria-hidden>{stat.icon}</span>
                 )}
-                <span className="text-3xl md:text-4xl font-bold text-purple-600">
+                <span className="text-3xl md:text-4xl font-bold text-primary">
                   {stat.value}
                 </span>
               </div>
-              <p className="mt-2 text-sm md:text-base text-gray-600 font-medium">
+              <p className="mt-2 text-sm md:text-base text-muted font-medium">
                 {stat.label}
               </p>
             </div>

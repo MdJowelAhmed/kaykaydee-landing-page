@@ -6,12 +6,12 @@ import { cn } from "@/lib/utils";
 export default function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden "
-    style={{
-      backgroundImage: "url('/assets/bg-banner3.png')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-    }}
+      style={{
+        backgroundImage: "url('/assets/bg-banner3.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       {/* Background decorative elements */}
       {/* <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden>
@@ -32,18 +32,27 @@ export default function HeroSection() {
         </p>
 
         {/* Trust badge */}
-        <div className="mt-6 flex items-center justify-center gap-2">
-          <div className="flex -space-x-2">
+        <div className="mt-8 flex items-center justify-center gap-2">
+          <div className="flex -space-x-4">
             {[1, 2, 3].map((i) => (
               <div
                 key={i}
-                className="w-8 h-8 rounded-full border-2 border-white/30 bg-gradient-to-br from-purple-300 to-purple-600 flex items-center justify-center"
+                className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-300 to-purple-600 flex items-center justify-center"
                 aria-hidden
               >
-                <Users className="h-3.5 w-3.5 text-white" aria-hidden />
+                <Users className="h-5 w-5 text-white" aria-hidden />
               </div>
             ))}
+
+            {/* Plus Icon */}
+            <div
+              className="w-9 h-9 rounded-full  bg-white/10 backdrop-blur-sm flex items-center justify-center"
+              aria-hidden
+            >
+              <span className="text-white  text-xl">+</span>
+            </div>
           </div>
+
           <span className="text-white/90 text-sm">
             Trusted by 80+ Allied Health Clinics in Australia
           </span>
@@ -54,8 +63,8 @@ export default function HeroSection() {
           <Link
             href="/contact"
             className={cn(
-              buttonVariants({ size: "lg" }),
-              "bg-white text-purple-800 hover:bg-white/90 font-semibold px-7 py-6 h-auto text-base rounded-full shadow-xl transition-all hover:scale-105 border-0"
+              // buttonVariants({ size: "lg" }),
+              "bg-accent text-white  flex items-center justify-center px-5 py-3 h-auto text-base rounded-md shadow-lg transition-all "
             )}
           >
             Start Free 14-Day Trial
@@ -65,7 +74,7 @@ export default function HeroSection() {
             href="/#pricing"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
-              "border-white/50 bg-white/10 text-white hover:bg-white/20 hover:text-white hover:border-white/70 font-semibold px-7 py-6 h-auto text-base rounded-full backdrop-blur-sm transition-all"
+              "border-white/50 bg-white text-accent  px-5 py-3 h-auto text-base rounded-md backdrop-blur-sm transition-all"
             )}
           >
             Take Subscription

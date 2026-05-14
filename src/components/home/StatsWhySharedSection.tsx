@@ -7,7 +7,7 @@ const STATS_WHY_BG = "/assets/Clip path.png";
 export default function StatsWhySharedSection() {
   return (
     <div
-      className="bg-cover  bg-no-repeat"
+      className="bg-cover  bg-no-repeat h-full min-h-[82vh]"
       style={{
         backgroundImage: `url('${STATS_WHY_BG}')`,
       }}
