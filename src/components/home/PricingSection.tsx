@@ -110,7 +110,7 @@ export default function PricingSection() {
             <div
               key={plan.name}
               className={cn(
-                "relative rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all hover:shadow-md",
+                "relative rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all hover:shadow-md pb-24",
                 plan.featured
                   ? "border-purple-500 shadow-purple-100 shadow-lg"
                   : "border-gray-100"
@@ -118,7 +118,7 @@ export default function PricingSection() {
             >
               {plan.featured && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="gradient-bg text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Most Popular
                   </span>
                 </div>
@@ -144,17 +144,17 @@ export default function PricingSection() {
                 href="/contact"
                 className={cn(
                   buttonVariants({ size: "default" }),
-                  "w-full rounded-lg font-medium mb-5 gradient-button text-white hover:opacity-90 border-0 justify-center h-9"
+                  "w-full rounded-lg font-medium mb-5 gradient-btn text-white hover:opacity-90 border-0 justify-center h-9"
                 )}
               >
                 Take Subscription
               </Link>
 
               <div>
-                <p className="text-xs font-semibold text-gray-600 uppercase tracking-wider mb-3">
+                <p className="text-xs font-semibold text-gray-600 uppercase tracking-wider mb-4">
                   Key features
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-teal-600 shrink-0" aria-hidden />

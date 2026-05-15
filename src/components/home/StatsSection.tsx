@@ -13,7 +13,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="" aria-labelledby="stats-heading">
+    <section className="mb-6" aria-labelledby="stats-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 id="stats-heading" className="sr-only">
           Zealth OS at a glance

@@ -40,7 +40,7 @@ const faqs = [
 export default function FAQSection() {
   return (
     <section className="bg-background py-16 md:py-24">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Frequently Asked Questions
@@ -55,7 +55,7 @@ export default function FAQSection() {
               href="/contact"
               className={cn(
                 buttonVariants({ variant: "outline", size: "default" }),
-                "rounded-full px-6 font-medium border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white inline-flex items-center h-9"
+                "rounded-md px-6 font-medium border-gray-900 bg-accent text-white hover:bg-accent/80 hover:text-white inline-flex items-center h-9"
               )}
             >
               Go full page
@@ -71,7 +71,7 @@ export default function FAQSection() {
               value={`faq-${index}`}
               className="rounded-xl border border-border/60 bg-black/5 px-5 py-1 transition-colors hover:bg-black/10"
             >
-              <AccordionTrigger className="text-left text-sm md:text-base font-medium text-gray-800 hover:no-underline hover:text-purple-600 py-4">
+              <AccordionTrigger className="text-left text-sm md:text-base font-medium text-gray-800 hover:no-underline py-3">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-sm text-gray-600 leading-relaxed pb-4">

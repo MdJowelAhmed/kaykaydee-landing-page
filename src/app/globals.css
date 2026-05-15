@@ -167,6 +167,18 @@
 }
 
 @layer utilities {
+  .gradient-bg {
+    background: linear-gradient(
+      135deg,
+      #48dac9 0%,
+      #44a9c4 33%,
+      #6737be 66%,
+      #e055fa 100%
+    );
+  }
+  .gradient-btn {
+    background: linear-gradient(135deg, #55DCD0, #26578C);
+  }
   .gradient-hero {
     background: linear-gradient(135deg, #3d1f6b 0%, #5c32a3 40%, #7946cd 70%, #9b6ee6 100%);
   }
