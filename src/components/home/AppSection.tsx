@@ -66,35 +66,17 @@ export default function AppSection() {
       </div>
 
       <div
-        className="flex-shrink-0 flex items-end justify-center gap-4 md:gap-6 relative"
+        className="flex-shrink-0 flex items-end justify-center gap-4 md:gap-6 lg:relative"
         aria-hidden
       >
-        {/* <div className="relative mb-4 h-56 w-32 overflow-hidden rounded-[28px] border-4 border-foreground/15 bg-background shadow-2xl transform -rotate-3 md:h-72 md:w-40">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-10 h-10 rounded-xl gradient-button flex items-center justify-center shadow-lg">
-                    <span className="text-white font-bold text-sm">Z</span>
-                  </div>
-                </div>
-                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-gray-200 rounded-full" />
-              </div>
-              <div className="relative w-36 md:w-44 h-64 md:h-80 gradient-hero rounded-[28px] shadow-2xl border-4 border-purple-300/30 overflow-hidden transform rotate-3">
-                <div className="absolute inset-0 gradient-hero" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-                  <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-2">
-                    <span className="text-white font-bold">Z</span>
-                  </div>
-                  <p className="text-white text-xs font-semibold">Zealth OS</p>
-                  <p className="text-white/85 text-[10px] mt-1">Great Solution.</p>
-                </div>
-                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-white/20 rounded-full" />
-              </div> */}
+    
 
         <Image
           src="/assets/mobile.png"
           alt="App Section"
           width={500}
           height={500}
-          className=" h-[500px] w-[400px] object-cover absolute -bottom-10 left-290"
+          className="w-full h-auto p-4 lg:p-0 lg:h-[500px] lg:w-[400px] object-cover lg:absolute -bottom-10 lg:left-200 xl:left-290 "
         />
       </div>
 
