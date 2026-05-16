@@ -5,13 +5,13 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const storeButtonClass =
-  "bg-[#414141] hover:bg-[#414141] text-white gap-2 px-5 py-5 h-auto rounded-xl border border-white/20 justify-start min-h-[44px]";
+  "bg-[#414141] hover:bg-[#414141] text-white gap-2 px-10 py-3 h-auto rounded-xl border border-white/20 justify-start min-h-[44px]";
 
 export default function AppSection() {
   return (
-    <section className=" ">
+    <section className="mt-10 lg:mt-16 ">
       <div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative  rounded-3xl overflow-hidden">
             <div className="absolute inset-0 bg-[#151515] opacity-90" aria-hidden />
 
@@ -35,7 +35,8 @@ export default function AppSection() {
                     aria-label="Download Zealth OS on the App Store (opens in a new tab)"
                     className={cn(buttonVariants({ variant: "default" }), storeButtonClass)}
                   >
-                    <Apple className="h-5 w-5 shrink-0" aria-hidden />
+                    {/* <Apple className="h-5 w-5 shrink-0" aria-hidden /> */}
+                    <Image src="/assets/apple-logo.png" alt="Apple Store" width={30} height={30} className="rounded-full" />
                     <div className="text-left leading-tight">
                       <p className="text-[10px] text-white/80">Download on the</p>
                       <p className="text-sm font-semibold">App Store</p>
@@ -48,7 +49,8 @@ export default function AppSection() {
                     aria-label="Get Zealth OS on Google Play (opens in a new tab)"
                     className={cn(buttonVariants({ variant: "default" }), storeButtonClass)}
                   >
-                    <PlayCircle className="h-5 w-5 text-green-400 shrink-0" aria-hidden />
+                    {/* <PlayCircle className="h-5 w-5 text-green-400 shrink-0" aria-hidden /> */}
+                    <Image src="/assets/google-play2.jpg" alt="Google Play" width={30} height={30} className="rounded-full object-cover" />
                     <div className="text-left leading-tight">
                       <p className="text-[10px] text-white/80">Download on the</p>
                       <p className="text-sm font-semibold">Google Play</p>
@@ -92,7 +94,7 @@ export default function AppSection() {
           alt="App Section"
           width={500}
           height={500}
-          className=" h-[500px] w-[400px] object-cover absolute -bottom-10 left-270"
+          className=" h-[500px] w-[400px] object-cover absolute -bottom-10 left-290"
         />
       </div>
 

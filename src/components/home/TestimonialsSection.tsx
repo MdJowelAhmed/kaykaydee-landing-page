@@ -30,7 +30,7 @@ const testimonials = [
 function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
   return (
     <div
-      className="flex items-center gap-0.5"
+      className="flex items-center gap-2 my-5"
       role="img"
       aria-label={`${rating} out of ${max} stars`}
     >
@@ -40,7 +40,7 @@ function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
           aria-hidden
           className={`h-4 w-4 ${
             i < rating
-              ? "fill-yellow-500 text-yellow-600"
+              ? "fill-[#FF8D28] text-yellow-600"
               : "fill-gray-200 text-gray-300"
           }`}
         />
@@ -52,7 +52,7 @@ function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
 export default function TestimonialsSection() {
   return (
     <section className="bg-background py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Everything you Need in One Platform
@@ -73,8 +73,8 @@ export default function TestimonialsSection() {
                 <h3 className="font-semibold text-gray-900 text-sm">
                   {testimonial.name}
                 </h3>
-                <p className="text-xs text-gray-500 mt-0.5">{testimonial.role}</p>
-                <p className="text-xs font-medium text-purple-600 mt-1">
+                <p className="text-xs text-gray-500 mt-3">{testimonial.role}</p>
+                <p className="text-xs font-medium text-purple-600 mt-3">
                   {testimonial.company}
                 </p>
               </div>

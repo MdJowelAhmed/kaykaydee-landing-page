@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import { Cairo } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import AboutContent from "@/components/about/AboutContent";
+
+const cairo = Cairo({
+  subsets: ["latin", "latin-ext", "arabic"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -22,7 +29,11 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main id="main-content" tabIndex={-1}>
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className={cairo.className}
+      >
         <AboutContent />
       </main>
       <Footer />

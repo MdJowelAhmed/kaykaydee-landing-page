@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
@@ -19,14 +18,11 @@ export default function ContactPage() {
       <main
         id="main-content"
         tabIndex={-1}
-        className="flex min-h-screen flex-col items-center justify-center bg-background px-4 py-24"
+        className="fixed inset-x-0 top-20 bottom-0 z-0 flex min-h-0 flex-col overflow-hidden px-3 py-3 md:px-5 md:py-4"
       >
         <h1 className="sr-only">Contact Zealth OS</h1>
-        <div className="w-full max-w-3xl">
-          <ContactForm />
-        </div>
+        <ContactForm />
       </main>
-      <Footer />
     </>
   );
 }

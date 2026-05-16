@@ -30,7 +30,7 @@ const reasons = [
 export default function WhyChooseSection() {
   return (
     <section className="py-16 md:py-24" id="features">
-      <div className="max-w-7xl mx-auto ">
+      <div className="container mx-auto ">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Why Choose Zealth OS?
@@ -52,13 +52,13 @@ export default function WhyChooseSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-40">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-16 mt-40">
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
             return (
               <div
                 key={index}
-                className="flex flex-col items-center  text-center"
+                className="flex flex-col items-center  text-center w-96"
               >
                 <div
                   className={`w-14 h-14 rounded-full ${reason.color} flex items-center justify-center mb-4`}

@@ -55,7 +55,7 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="bg-background py-16 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Everything you Need in One Platform
@@ -66,7 +66,7 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-gradient-button">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-16 bg-gradient-button">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
@@ -52,7 +53,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-border/60 bg-background py-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <Link
@@ -60,12 +61,19 @@ export default function Footer() {
             className="flex items-center gap-2"
             aria-label="Zealth OS home"
           >
-            <div className="w-8 h-8 rounded-lg gradient-button flex items-center justify-center">
+            {/* <div className="w-8 h-8 rounded-lg gradient-button flex items-center justify-center">
               <span className="text-white font-bold text-sm">Z</span>
             </div>
             <span className="font-bold text-xl text-purple-700">
               Zealth <span className="text-purple-500">OS</span>
-            </span>
+            </span> */}
+            <Image
+              src="/assets/logo.png"
+              alt="Zealth OS"
+              width={130}
+              height={25}
+              className="w-auto h-auto"
+            />
           </Link>
 
           {/* Nav Links */}
